@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jawid/Documents/Self_development/cpp/cliContact/contact.cpp
+iostream
+-
+contact.h
+/home/jawid/Documents/Self_development/cpp/cliContact/contact.h
+
+/home/jawid/Documents/Self_development/cpp/cliContact/contact.h
+string
+-
+
+/home/jawid/Documents/Self_development/cpp/cliContact/main.cpp
+iostream
+-
+contact.h
+/home/jawid/Documents/Self_development/cpp/cliContact/contact.h
+

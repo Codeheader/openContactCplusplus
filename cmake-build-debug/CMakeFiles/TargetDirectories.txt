@@ -1,0 +1,3 @@
+/home/jawid/Documents/Self_development/cpp/cliContact/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jawid/Documents/Self_development/cpp/cliContact/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jawid/Documents/Self_development/cpp/cliContact/cmake-build-debug/CMakeFiles/cliContact.dir

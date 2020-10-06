@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/cliContact.dir/main.cpp.o CMakeFiles/cliContact.dir/contact.cpp.o  -o cliContact 
