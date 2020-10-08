@@ -2,8 +2,9 @@
 #include "contact.h"
 
  int main(){
-    contact newC("ali",555555);
-    newC.mf_list_contacts();
 
+	 contact c;
+	 std::cin >> c;
+	 std::cout<< c;
      return  0;
 }

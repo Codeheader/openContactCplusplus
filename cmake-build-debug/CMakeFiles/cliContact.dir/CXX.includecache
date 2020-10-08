@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jawid/Documents/Self_development/cpp/cliContact/contact.cpp
+/home/jawid/Documents/Self_development/cpp/cliContact/contact.h
 iostream
 -
-contact.h
-/home/jawid/Documents/Self_development/cpp/cliContact/contact.h
-
-/home/jawid/Documents/Self_development/cpp/cliContact/contact.h
+ostream
+-
 string
 -
 

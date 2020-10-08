@@ -4,6 +4,7 @@
 #include <iostream>
 #include "contact.h"
 
+contact::contact(){}
 contact::contact(std::string fname, double mobile) {
     mv_first_name = fname;
     mv_mobile_number = mobile;
@@ -60,3 +61,23 @@ void contact::mf_set_mobile_number(double d) {
 double contact::mf_get_mobile_number() const {
     return mv_mobile_number;
 }
+
+
+std::ostream& operator<<(std::ostream& os, const contact& c){
+	os << "first name :"<<c.mv_first_name<<"\n"
+		<<"last name :"<<c.mv_last_name << "\n"
+		<<"email :"<<c.mv_email<<"\n"
+		<<"address :"<< c.mv_address <<"\n"
+		<<"mobile :"<<c.mv_mobile_number
+		<<std::endl;
+	return os;
+}
+
+std::istream& operator>>(std::istream& in, contact& c)
+{
+	in >> c.mv_first_name >> c.mv_last_name 
+		>> c.mv_email >>c.mv_address
+		>> c.mv_mobile_number;
+	return in;
+}
+

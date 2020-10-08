@@ -1,11 +1,12 @@
-//
+
 // Created by jawid on 5/9/20.
 //
 
 #ifndef CLICONTACT_CONTACT_H
 #define CLICONTACT_CONTACT_H
 
-
+#include <iostream>
+#include <ostream>
 #include <string>
 
 class contact {
@@ -18,6 +19,7 @@ private:
 
 public:
     //constructors
+    contact();
     contact(std::string fname,double mobile);
     contact(std::string fname,std::string lname, std::string email,std::string add,double mobile);
     //dtor
@@ -37,8 +39,13 @@ public:
     //display contacts
     void mf_list_contacts();
 
-    //impletment standard input and output istream and ostream
+   friend  std::ostream& operator<<(std::ostream& os, const contact& c);
+   /*
+    * in order to use ostream and istream as overloaded operator we have to declare it as friend.
+    */
+   friend std::istream& operator>>(std::istream& in,contact& c);
+    
+	    
 };
-
 
 #endif //CLICONTACT_CONTACT_H
