@@ -3,8 +3,7 @@
 
  int main(){
 
-	 contact c;
-	 std::cin >> c;
-	 std::cout<< c;
+	contact c("ali","Abbas","abbas@yahoo.com.au","lane st lanewood",2555468);
+	c.mf_list_contacts();
      return  0;
 }

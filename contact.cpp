@@ -2,6 +2,7 @@
 // Created by jawid on 5/9/20.
 //
 #include <iostream>
+#include <iomanip>
 #include "contact.h"
 
 contact::contact(){}
@@ -23,8 +24,8 @@ contact::~contact() {
 }
 
 void contact::mf_list_contacts() {
-    std::cout << "first name :" << mv_first_name << '\n'
-              << "Last Name :" << mv_last_name << '\n' << "Mobile Number :" << mv_mobile_number << std::endl;
+    std::cout << "first name :"<<std::setw(9) << mv_first_name << '\n'
+              << "Last Name :"<<std::setw(12) << mv_last_name << '\n' << "Mobile Number :"<<std::setw(7) << mv_mobile_number << std::endl;
 }
 
 void contact::mf_set_first_name(std::string s) {
@@ -62,7 +63,7 @@ double contact::mf_get_mobile_number() const {
     return mv_mobile_number;
 }
 
-
+//implementatio of std::ostream
 std::ostream& operator<<(std::ostream& os, const contact& c){
 	os << "first name :"<<c.mv_first_name<<"\n"
 		<<"last name :"<<c.mv_last_name << "\n"
@@ -73,6 +74,7 @@ std::ostream& operator<<(std::ostream& os, const contact& c){
 	return os;
 }
 
+//implementation of std::istream
 std::istream& operator>>(std::istream& in, contact& c)
 {
 	in >> c.mv_first_name >> c.mv_last_name 
